@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="CurrentWeatherView" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="CurrentWeatherView" customModule="weather" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="488" height="52"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Понедельник" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YxF-pU-USq" userLabel="weekDay">
+                    <rect key="frame" x="20" y="13.5" width="127" height="25"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="21"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="сегодня" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SKh-u5-92l" userLabel="now">
+                    <rect key="frame" x="167" y="13.5" width="76" height="25"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="21"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XzY-eB-TAo" userLabel="minDegree">
+                    <rect key="frame" x="452" y="10" width="16" height="32"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="27"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2IR-3V-gOD" userLabel="maxDegree">
+                    <rect key="frame" x="416.5" y="10" width="15.5" height="32"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="27"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="2IR-3V-gOD" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="I1g-eh-YDq"/>
+                <constraint firstItem="SKh-u5-92l" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Psi-CM-U5H"/>
+                <constraint firstItem="YxF-pU-USq" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="R5j-Yj-vay"/>
+                <constraint firstItem="XzY-eB-TAo" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="gr4-kp-NwU"/>
+                <constraint firstItem="XzY-eB-TAo" firstAttribute="leading" secondItem="2IR-3V-gOD" secondAttribute="trailing" constant="20" id="hdD-nT-J2h"/>
+                <constraint firstItem="SKh-u5-92l" firstAttribute="leading" secondItem="YxF-pU-USq" secondAttribute="trailing" constant="20" id="mEC-Y6-JDL"/>
+                <constraint firstItem="YxF-pU-USq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="mrF-bt-VSA"/>
+                <constraint firstAttribute="trailing" secondItem="XzY-eB-TAo" secondAttribute="trailing" constant="20" id="wcJ-TN-QS1"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="maxDegree" destination="2IR-3V-gOD" id="gr2-tK-raR"/>
+                <outlet property="minDegree" destination="XzY-eB-TAo" id="Oau-jH-I8z"/>
+                <outlet property="weekDay" destination="YxF-pU-USq" id="JnV-mf-Tg2"/>
+            </connections>
+            <point key="canvasLocation" x="-192.75362318840581" y="-214.95535714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

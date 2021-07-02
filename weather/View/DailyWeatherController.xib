@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="DailyWeatherController" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="DailyWeatherController" customModule="weather" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="161" height="400"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gGW-dX-Zu5" userLabel="degree">
+                    <rect key="frame" x="0.0" y="280" width="161" height="120"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SDU-BT-7Hc">
+                    <rect key="frame" x="0.0" y="120" width="161" height="160"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 pm" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w3V-KX-evk" userLabel="time">
+                    <rect key="frame" x="0.0" y="0.0" width="161" height="80"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="40%" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TMn-IT-Fkw" userLabel="humidity">
+                    <rect key="frame" x="0.0" y="80" width="161" height="40"/>
+                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="12"/>
+                    <color key="textColor" systemColor="systemBlueColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="SDU-BT-7Hc" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.4" id="5fR-1T-Igk"/>
+                <constraint firstItem="SDU-BT-7Hc" firstAttribute="top" secondItem="TMn-IT-Fkw" secondAttribute="bottom" id="Bwq-jl-MeJ"/>
+                <constraint firstItem="gGW-dX-Zu5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="C4h-gU-cJ3"/>
+                <constraint firstAttribute="trailing" secondItem="SDU-BT-7Hc" secondAttribute="trailing" id="NGB-nj-fe6"/>
+                <constraint firstItem="w3V-KX-evk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="OV4-HK-I7j"/>
+                <constraint firstAttribute="trailing" secondItem="gGW-dX-Zu5" secondAttribute="trailing" id="Ty9-PA-qWN"/>
+                <constraint firstItem="SDU-BT-7Hc" firstAttribute="top" secondItem="TMn-IT-Fkw" secondAttribute="bottom" id="Vcl-j2-GbS"/>
+                <constraint firstItem="TMn-IT-Fkw" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.1" id="Wir-zv-cHb"/>
+                <constraint firstItem="SDU-BT-7Hc" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="a0M-q0-fjp"/>
+                <constraint firstItem="gGW-dX-Zu5" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.3" id="bBZ-ZH-6Lr"/>
+                <constraint firstItem="gGW-dX-Zu5" firstAttribute="top" secondItem="SDU-BT-7Hc" secondAttribute="bottom" id="f5k-cm-ct0"/>
+                <constraint firstAttribute="trailing" secondItem="w3V-KX-evk" secondAttribute="trailing" id="gih-M3-hG1"/>
+                <constraint firstAttribute="bottom" secondItem="gGW-dX-Zu5" secondAttribute="bottom" id="glB-Yk-qZ6"/>
+                <constraint firstAttribute="trailing" secondItem="TMn-IT-Fkw" secondAttribute="trailing" id="ihK-aM-H1K"/>
+                <constraint firstItem="SDU-BT-7Hc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="jGL-g2-rg0"/>
+                <constraint firstItem="TMn-IT-Fkw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="pjr-Tz-8P9"/>
+                <constraint firstItem="TMn-IT-Fkw" firstAttribute="top" secondItem="w3V-KX-evk" secondAttribute="bottom" id="qUW-oI-1YA"/>
+                <constraint firstItem="w3V-KX-evk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="vpR-gF-Sxz"/>
+                <constraint firstItem="w3V-KX-evk" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.2" id="y9f-i9-5bZ"/>
+            </constraints>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="degree" destination="gGW-dX-Zu5" id="apA-RN-XjW"/>
+                <outlet property="imageView" destination="SDU-BT-7Hc" id="i9a-Lx-V3A"/>
+                <outlet property="time" destination="w3V-KX-evk" id="m5O-cm-0TR"/>
+            </connections>
+            <point key="canvasLocation" x="-335.50724637681162" y="-137.27678571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

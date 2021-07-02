@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="WeekDayWeatherViewCell" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="WeekDayWeatherViewCell" customModule="weather" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nJt-d7-cVS">
+                    <rect key="frame" x="137" y="0.0" width="140" height="140"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="nJt-d7-cVS" secondAttribute="height" multiplier="1:1" id="oQg-kE-8t5"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вторник" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLZ-no-DDh">
+                    <rect key="frame" x="0.0" y="0.0" width="145" height="140"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="19"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5H1-rO-KTw" userLabel="maxDegree">
+                    <rect key="frame" x="310.5" y="0.0" width="52" height="140"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="23"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9H-Gf-BUf" userLabel="minDegree">
+                    <rect key="frame" x="362.5" y="0.0" width="51.5" height="140"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="23"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="5H1-rO-KTw" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.125" id="2SV-21-rhz"/>
+                <constraint firstItem="MLZ-no-DDh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="33b-fT-Nss"/>
+                <constraint firstItem="5H1-rO-KTw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="4H0-4L-VLc"/>
+                <constraint firstItem="nJt-d7-cVS" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="5e2-oZ-dZk"/>
+                <constraint firstItem="nJt-d7-cVS" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="6AS-gT-e2f"/>
+                <constraint firstAttribute="bottom" secondItem="MLZ-no-DDh" secondAttribute="bottom" id="9AA-WE-6Sb"/>
+                <constraint firstItem="F9H-Gf-BUf" firstAttribute="leading" secondItem="5H1-rO-KTw" secondAttribute="trailing" id="Aew-vM-h3q"/>
+                <constraint firstAttribute="trailing" secondItem="F9H-Gf-BUf" secondAttribute="trailing" id="Gu8-bc-DgT"/>
+                <constraint firstAttribute="bottom" secondItem="nJt-d7-cVS" secondAttribute="bottom" id="Lna-U8-B7c"/>
+                <constraint firstItem="MLZ-no-DDh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Nbn-HO-mqt"/>
+                <constraint firstAttribute="bottom" secondItem="5H1-rO-KTw" secondAttribute="bottom" id="S5K-2J-Zos"/>
+                <constraint firstItem="F9H-Gf-BUf" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.125" id="SWH-EO-j8r"/>
+                <constraint firstItem="nJt-d7-cVS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Tre-nV-wOk"/>
+                <constraint firstAttribute="bottom" secondItem="F9H-Gf-BUf" secondAttribute="bottom" id="VOo-A8-ffS"/>
+                <constraint firstItem="MLZ-no-DDh" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.35" id="cao-1g-oTB"/>
+                <constraint firstItem="F9H-Gf-BUf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="req-1v-Wmj"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="date" destination="MLZ-no-DDh" id="SQe-RO-E0r"/>
+                <outlet property="maximalDegree" destination="5H1-rO-KTw" id="5tj-MB-Sch"/>
+                <outlet property="minimalDegree" destination="F9H-Gf-BUf" id="Zot-Bq-ra8"/>
+                <outlet property="picture" destination="nJt-d7-cVS" id="2yx-GN-Vfj"/>
+            </connections>
+            <point key="canvasLocation" x="82.608695652173921" y="310.71428571428572"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
